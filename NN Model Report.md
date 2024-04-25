@@ -1,15 +1,15 @@
-# Module 21 Report 
+# Neural Network Analysis
 
 ## Overview of the Analysis
-The purpose of this analysis of this analysis was to create a neural networking model to help determine the best applicants for fudning with the best chance of success. 
+The purpose of this analysis of this analysis was to create a neural networking model to help determine the best applicants for funding with the best chance of success. 
 
 ## Results 
 
-## Data Preoricessing
-    1. What variables are the target(s) for your model? 
+## Data Preprocessing
+    1. Target Variables
         Since we are trying to determine pplicants with the best chance of success the target 
         of my model was IS_SUCCESSFUL which basically determine if the moeny was used effectively. 
-    2. What variables are the features for your model? 
+    2. Model Features
         --> Affiliated section of idustry (APPLICATION_TYPE)
         --> Goverment organiization classigication (Classificaiton)
         --> Use Case for funding (USE_CASE)
@@ -18,17 +18,17 @@ The purpose of this analysis of this analysis was to create a neural networking 
         --> Income classification (INCOME_AMT)
         --> Specical considerations for application (SPECIAL_CONSIDERATIONS)
         --> Funding amoount requested (ASK_AMT)
-    3. What variable(s) should be removed from the input data because they are neither targets nor features?
+    3. aRemoved variables?
         --> The identificatio column (EIN/NAME) as this data would not really contribute to a comapny's success 
 ## Compiling, Training, and Evaluation the model
-    1. How many neurons, layers, and activation functions did you select for your neural network model, and why? (Refer to Pic 1 in Resources Folder)
+    1. Number of neurons, layers, and activation functions used? (Refer to Pic 1 in Resources Folder)
         --> Input Layer: I used 43 input features as this was the model/system was expecting based on our training data
         --> First hidden layer: 80 neurons were selected to increase its capacity to learn complex patters and Relu was selected as it computation effective and introduces non-linearity to the network. 
         --> Second Hidden Layer: 30 neurons were selcted to reduce dimensionlaity and overfitting from first hhidden layer inouts
         --> Output Layer: 1 neuron was used as it we want a binary classifier which is fit for 1 and 0s. Sigmoid function was used as it is best for squashing vlayues between o and 1 which is what we need for a binary classifier. 
-    2. Were you able to achieve the target model performance? (Refer to Pic 2.1 and 2.2 Resouces Folder)
+    2. Target model performance achieved (Refer to Pic 2.1 and 2.2 Resouces Folder)
         No I was not able to acheieve the target model performance. The best I was able to rach was about 74.%
-    3. What steps did you take in your attempts to increase model performance? (Refer to optimization jupyter notebook for workflow)
+    3. Steps taken to improve model performance (Refer to optimization jupyter notebook for workflow)
         --> In my first optimization attempt I decrease the nubmer of neurons in both layers to see if overfitting was the issue with the accuracy. 
         --> In my second optimization attempt I increased the nubmer of neurons but the accruacry did not change much. Still got very similar score form all my previous models
         --> 3rd optimization atempt: 
