@@ -1,7 +1,7 @@
 # Charity Funding Prediction
 
 ## Overview
-The objective of this project is to build a machine learning model to predict whether applicants will be successful if funded by a charity organization. We preprocess the data, optimize the model, and evaluate its performance.
+The objective of this project is to build a machine learning model using neural netowrking to predict whether a charity orgnaization applicant will be successful in receiving funding. The data was preprocess, model optimized, and evaluated its performance.
 
 ## Preprocessing
 ### Data Cleaning
